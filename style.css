@@ -40,9 +40,12 @@ i {
     color: grey;
 }
 
-span {
+a{
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+
 
 }
 
@@ -55,14 +58,36 @@ span {
     padding: 1rem;
     margin-left: 0.5rem;
 }
+.item{
+    margin-left: 1rem;
+}
+a{
+    padding: 1rem;
+    padding-left: 0rem;
 
-.item:hover {
-    background-color: lightgray;
-    border-radius: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
+a:hover {
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem;   
+    padding-left: 0rem;
+
+
+}
+a:focus{
+    background-color:#d8b4fe;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: blue;
+    padding-left: 0rem;
+
+
+    }
+a .icon:focus{
+    color: blue;
+}
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -74,9 +99,6 @@ span {
 }
 
 .short_drawer {
-    position: relative;
-    left: 50rem;
-    bottom: 20rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -85,15 +107,4 @@ span {
     height: 10%;
     margin-left: 25rem;
     box-shadow: 2px 1px 2px 2px;
-}
-.item1{
-    background-color:lightgray;
-    border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    color: blue;
-}
-.icon{
-    color: blue;
 }
